@@ -1,0 +1,2 @@
+attack_cooldown = 30; // Tempo de recarga entre golpes em frames
+attack_timer = 0; // Contador de tempo para os golpes
