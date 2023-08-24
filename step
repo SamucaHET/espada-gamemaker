@@ -1,0 +1,10 @@
+// Lógica de ataque
+if (attack_timer <= 0) {
+    if (keyboard_check_pressed(vk_z)) { // Use a tecla desejada
+        var sword = instance_create(x + image_xscale * 32, y, obj_sword); // Criar objeto da espada
+        sword.image_xscale = image_xscale; // Definir a direção da espada baseada na direção do jogador
+        attack_timer = attack_cooldown; // Reiniciar o timer de recarga
+    }
+} else {
+    attack_timer--;
+}
